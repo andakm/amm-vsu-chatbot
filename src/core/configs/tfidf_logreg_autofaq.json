@@ -3,7 +3,7 @@
     "class_name": "faq_reader",
     "x_col_name": "Question",
     "y_col_name": "Answer",
-    "data_path": "src/core/data/dataset_vsu_qa.csv"
+    "data_path": "content/amm-vsu-chatbot/src/core/data/dataset_vsu_qa.csv"
   },
   "dataset_iterator": {
     "class_name": "basic_classification_iterator",
@@ -79,8 +79,7 @@
       },
       {
         "in": "y_pred_ids",
-        "out": "y_pred_answers",
-        "ref": "answers_vocab"
+        "out": "y_pred_answers"
       }
     ],
     "out": [
@@ -94,7 +93,7 @@
   },
   "metadata": {
     "variables": {
-      "ROOT_PATH": "src/core",
+      "ROOT_PATH": "content/amm-vsu-chatbot/src/core",
       "MODELS_PATH": "{ROOT_PATH}/models"
     }
   }
